@@ -1,0 +1,80 @@
+<!doctype html>
+<!--
+	Solution by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="mvc/css/bootstrap.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="mvc/css/style.css">
+    <title>MVC App</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+    <div class="container"><a class="navbar-brand"><img src="images/watermark.png" /></a>
+        <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span
+                class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#news">News</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a href="#" class="btn btn-outline-dark my-2 my-sm-0 mr-3 text-uppercase">Join</a> <a href="#"
+                                                                                                       class="btn btn-info my-2 my-sm-0 text-uppercase">Host</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid gtco-banner-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1> We promise to bring
+                    the best <span>solution</span> for
+                    your business. </h1>
+                <p>Write your unique room name and hit on Go !! </p>
+				<div class="col-lg-6" id="contact">
+                <h4> Create New Room</h4>
+                <input type="text" class="form-control" id="vc-room" placeholder="room name">
+				<br />
+                <a href="#" id="myButton">GO <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+				</div>
+                
+			</div>
+            <div class="col-md-6">
+                <div class="card"><img class="card-img-top img-fluid" src="images/banner-img1.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="mvc/js/jquery-3.3.1.slim.min.js" ></script>	
+	<script>
+	
+var el = document.getElementById('myButton');
+var message = document.getElementById("vc-room");
+el.onclick = showFoo;
+
+function showFoo() {
+if ( message.value == '')
+{ alert("Empty room"); }
+else{
+//alert(message.value);
+  window.location = "https://mvc.rmtech.in/" + message.value ;
+  return false;
+}
+}
+</script>
